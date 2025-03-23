@@ -1,18 +1,19 @@
 /* Style général */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #eef1f7;
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header ul {
@@ -22,23 +23,29 @@ header ul {
 
 header ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header ul li a {
-    color: #fff;
+    color: #f8f8f8;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #f8a200;
 }
 
 main {
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -49,22 +56,45 @@ main {
 }
 
 .gallery img {
-    border: 3px solid #ccc;
-    border-radius: 5px;
-    transition: transform 0.3s;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
-    border-color: #333;
+    transform: scale(1.1);
+    border-color: #f8a200;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #f8a200, #ff5e00);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ff5e00, #f8a200);
 }
 
 footer {
-    background-color: #0a0a0a;
-    color: #fff;
+    background-color: #111;
+    color: #f8f8f8;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-weight: 500;
 }
